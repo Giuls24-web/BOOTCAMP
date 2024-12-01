@@ -1,34 +1,4 @@
-def suma(a,b):
-#Devuelve la suma de dos números
-    return a+b
-
-def resta(a,b):
-    #Devuelve la resta de dos números
-    return a-b
-
-def multiplicacion(a,b):
-    #Devuelve la multiplicacion de dos números
-    return a*b
-
-def division(a,b):
-    #Devuelve la division de dos números. Manejo división /0
-    try:
-     return a/b
-    except ZeroDivisionError:
-     return "No se puede dividir para cero"
-    
-    
-def radicacion(a,b):
-    #Devuelve la division de dos números. Manejo división /0
-    try:
-     return a**(1/b)
-    except ZeroDivisionError:
-     return "El indice de la raíz no puede ser cero"
-    
-def potenciacion(a,b):
-    #Devuelve la potencia dado un exponente
-     return a**b
-
+from operaciones import suma, resta, multiplicacion, division, radicacion, potenciacion
 #Punto de Entrada
 if __name__ =='__main__':
    print("Bienvenido a la calculadora básica")
