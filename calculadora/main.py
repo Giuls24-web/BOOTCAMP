@@ -16,6 +16,18 @@ def division(a,b):
      return a/b
     except ZeroDivisionError:
      return "No se puede dividir para cero"
+    
+    
+def radicacion(a,b):
+    #Devuelve la division de dos números. Manejo división /0
+    try:
+     return a**(1/b)
+    except ZeroDivisionError:
+     return "El indice de la raíz no puede ser cero"
+    
+def potenciacion(a,b):
+    #Devuelve la potencia dado un exponente
+     return a**b
 
 #Punto de Entrada
 if __name__ =='__main__':
@@ -27,3 +39,5 @@ if __name__ =='__main__':
    print (f"Resta: {resta(num1,num2)}")
    print (f"Multiplicacion: {multiplicacion(num1,num2)}")
    print (f"Division: {division(num1,num2)}")
+   print (f"Radicación: {radicacion(num1,num2)}")
+   print (f"Potenciación: {potenciacion(num1,num2)}")
