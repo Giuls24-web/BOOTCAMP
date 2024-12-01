@@ -1,0 +1,13 @@
+{
+    "name": "Devcontainer with NGINX",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [80],
+    "postCreateCommand": "echo 'DevContainer with NGINX is ready!'",
+    "remoteUser": "root",
+    "mounts": [
+        "source=${localWorkspaceFolder}/html.target=/usr/share/nginx/html.type=bind"
+    ]
+
+}

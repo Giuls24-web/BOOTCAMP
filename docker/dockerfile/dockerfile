@@ -1,0 +1,4 @@
+#usa la imagen base de NGIX
+FROM nginx:latest
+#copia el archivo HTML al directorio NGINX que sirve los archivos
+COPY html /usr/share/nginx/html
